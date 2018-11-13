@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="css/_bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <a href="index.html"><img id="logo1"  src="pic/logo.png" alt="logo" ></a>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tanu Dangol
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li><a href="js_dashboard.html">Dashboard</a> </li>
+                <li><a href="js_change_pw.html">Change Password</a></li>
+                <li><a href="index.html">Log Out</a></li>
+            </ul>
+        </div>
+    </div><!--end of header-->
+</div><!--end of container-->
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-default col-md-12 col-xs-12 col-sm-12">
+            <div class="navbar-header ">
+                <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="container">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a href="js_dashboard.html">Job Seeker</a></li>
+                            <li><a href="search_job.html">Search Jobs</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="contact_us.html">Contact Us</a></li>
+                        </ul>
+                </div><!--end of container-->
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div><!--container-fluid-->
+<div class="container">
+    <div class="dashboard-aside col-sm-4 col-xs-12">
+        <div class="panel panel-default">
+            <div class="pro_pic">
+                <div class="media-heading">
+                    <div class="image-upload">
+                        <label for="jsfile-input" class="col-lg-12">
+                            upload Photo
+                        </label>
+                        <img id="jsprofile_pic" src="#" alt="your_image"/>
+                        <input id="jsfile-input" type="file" onchange="readURL(this);"/>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <h3 class="media-heading">My Profile</h3>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <a href="js_dashboard.html">Dashboard</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="js_edit_pro.html">Edit profile</a>
+            </div>
+            <div class="panel-body">
+                <a href="view_profile.html">View profile</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="update_edu.html">Education</a>
+            </div>
+            <div class="panel-body">
+                <a href="js_experience.html">Experience</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="update_traning.html">Traning</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="">Job applied</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="index.html">Logout</a>
+            </div>
+        </div><!--panel panel-default-->
+    </div><!--dashboard-aside-->
+        <div class="edit col-sm-7 col-xs-12">
+            <h3><strong>EDIT PROFILE</strong></h3>
+
+            <form class="form-horizontal"  name="form3" method="post" action="" role="form">
+                <h4><b>Personal Detail</b></h4>
+
+                <div class="form-group">
+                    <label for="Fullname" class="col-sm-4 control-label">Full Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="Fullname" placeholder="Enter Full Name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Gender</label>
+                    <div class="col-sm-8">
+                        <label for="r-male">Male</label>
+                        <input type="radio"  id="r-male" checked>
+                        <label for="r-female" >Female</label>
+                        <input type="radio" id="r-female">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob" class="col-sm-4 control-label">Date Of Birth</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="dob" placeholder="DOB">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile" class="col-sm-4 control-label">Mobile no</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="mobile" placeholder="Mobile no">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Martial Status</label>
+                    <div class="col-sm-8">
+                        <label for="single" >Single</label>
+                        <input type="radio" checked  id="single">
+                        <label for="married" >Married</label>
+                        <input type="radio" id="married">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="current address" class="col-sm-4 control-label">Currrent Address</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="current address" placeholder="Current Address">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="permanent address" class="col-sm-4 control-label">Permanent Address</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="permanent address" placeholder="Permanent Address">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="e-mail" class="col-sm-4 control-label">E-mail Address</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="e-mail" placeholder="E-mail Address">
+                    </div>
+                </div>
+
+                <h4><b>Career Detail</b></h4>
+
+                <div class="form-group">
+                    <label for="career objective" class="col-sm-4 control-label">Career Objective</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="career objective" placeholder="Career Objective">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="expected salary" class="col-sm-4 control-label">Expected Salary</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="expected salary" placeholder="Expected Salary">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Looking For</label>
+                    <div class="col-sm-8">
+                        <label for="Entry" >Entry Level</label>
+                        <input type="radio" checked  id="Entry">
+                        <label for="mid" >Mid Level</label>
+                        <input type="radio" id="mid">
+                        <label for="senior">Senior Level</label>
+                        <input type="radio" id="senior">
+                    </div>
+                </div>
+
+                <h4><b>Job Peference</b></h4>
+
+                <div class="form-group">
+                    <label for="firstpeference"  class=" control-label col-sm-4">
+                        First Peference
+                    </label>
+
+                    <div class="col-sm-8">
+                        <select id="firstpeference" class="form-control">
+                            <option>Account/finance</option>
+                            <option>software</option>
+                            <option>Marketing</option>
+                            <option>Goverment</option>
+                            <option>it/communication</option>
+                            <option>intern</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="secondpeference"  class=" control-label col-sm-4">
+                        Second Peference
+                    </label>
+
+                    <div class="col-sm-8">
+                        <select id="secondpeference" class="form-control">
+                            <option>Account/finance</option>
+                            <option>software</option>
+                            <option>Marketing</option>
+                            <option>Goverment</option>
+                            <option>it/communication</option>
+                            <option>intern</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="joblocation" class="col-sm-4 control-label">Job Location</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="joblocation" placeholder="Job Location">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-primary pull-right">Save</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+</div><!--end of container-->
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="about-site col-md-3  col-xs-12">
+                        <p class="foot-title">About Our Site</p>
+                        <ul class="foot-menu">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms of Uses</a></li>
+                            <li><a href="#">Disclaimers</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="useful-links col-md-3  col-xs-12">
+                        <p class="foot-title">Some Useful Links</p>
+                        <ul class="foot-menu">
+                            <li><a href="">About Job Portal</a></li>
+                            <li><a href="">Job Seeker Register</a></li>
+                            <li><a href="">Employer Register</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="useful-links col-md-3 col-xs-12">
+                        <p class="foot-title">Some Useful Links</p>
+                        <ul class="foot-menu">
+                            <li><a href="">About Job Portal</a></li>
+                            <li><a href="">Job Seeker Register</a></li>
+                            <li><a href="">Employer Register</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo2 col-md-3 col-xs-12">
+                        <a href="#"><img src="pic/logo.png" alt="logo" ></a>
+                    </div>
+                </div>
+            </div><<!--end of container-->
+        </div><!--end of footer-->
+    </div><!--row-->
+</div><!--container-fluid-->
+
+<div class="clearfix"></div>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+
+</body>
+</html>

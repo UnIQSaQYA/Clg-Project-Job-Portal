@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css/_bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="header">
+            <div class="logo col-sm-6 col-xs-12">
+                <a href="index.html"><img id="logo1"  src="pic/logo.png" alt="logo" ></a>
+            </div>
+
+            <div class="login col-sm-6 col-xs-12">
+                <form class="form-inline" method="post" action="#">
+                    <div class="form-group">
+                        <input type="text" name="username" placeholder="username" style="height: 35px; width: 150px;"/>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="password" style="height: 35px; width: 150px;"/>
+                    </div>
+
+                    <input type="submit" class="btn btn-primary" name="sign_in" value="login"/>
+                </form>
+            </div>
+
+            <div class="row">
+                <div class="sign-up-description">
+                    <p id="description">For registration. Click here</p><br>
+                    <div class="sign-up pull-right">
+                        <div class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Signup
+                                <span class="caret"></span></button>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li><a href="emp_signup.html">Jobseeker</a> </li>
+                                <li><a href="emp_signup.html">Employee</a></li>
+                            </ul>
+                        </div>
+                    </div><!--end of signup-->
+                </div><!--end of signup-description-->
+            </div><!--end of row-->
+        </div><!--end of login-->
+    </div><!--end of header-->
+</div><!--end of row-->
+</div><!--end of container-->
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-default col-md-12 col-xs-12 col-sm-12">
+            <div class="navbar-header ">
+                <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="container">
+
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a href="js_login.html">Job Seeker</a></li>
+                            <li><a href="emp_login.html">Employer</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="contact_us.html">Contact Us</a></li>
+                        </ul>
+
+                </div><!--end of container-->
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div><!--container-fluid-->
+
+
+<div class="container">
+        <div class="col-sm-3 col-xs-12"></div>
+        <div class="signup col-sm-6 col-xs-12">
+            <form  class="form-horizontal" name="form1" method="post" action="#">
+                <legend>Employer Registration Form</legend>
+                <div class="form-group">
+                    <label class="col-sm-4 col-xs-12">Organization Name:</label>
+                    <div class="col-sm-8 col-xs-12">
+                        <input  class="bar" type="text" name="fname" placeholder="Name"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 col-xs-12">E-mail:</label>
+                    <div class="col-sm-8 col-xs-12">
+                        <input class="bar" type="text" name="email" placeholder="Email"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 col-xs-12">User Name:</label>
+                    <div class="col-sm-8 col-xs-12">
+                        <input  class="bar" type="text" name="fname" placeholder="Name"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 col-xs-12">Password:</label>
+                    <div class="col-sm-8 col-xs-12">
+                        <input class="bar" type="password" name="pwd" placeholder="Password"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 col-xs-12">Confirm password:</label>
+                    <div class="col-sm-8 col-xs-12">
+                        <input class="bar" type="password" name="c-pwd" placeholder="Password"/>
+                    </div>
+                </div><br>
+
+                <div class="form-group">
+                <input type="submit" class="btn btn-primary center-block " value="Create my account">
+                </div>
+
+                <p class="text-center ">Also sign up using</p>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success center-block" value="Register using linkedin">
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-3 col-xs-12"></div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="social-media">
+            <ul>
+                <li>
+                    <a href="#" target="_blank">
+                        <div class="twitter col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                            <p class="name"><i class="ion ion-social-twitter"></i></p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" target="_blank">
+                        <div class="facebook col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                            <p class="name"><i class="ion ion-social-facebook"></i></p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" target="_blank">
+                        <div class="google col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                            <p class="name"><i class="ion ion-social-googleplus"></i></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div><!--end of social-media-->
+    </div>
+
+
+    <div class="row">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="about-site col-md-3  col-xs-12">
+                        <p class="foot-title">About Our Site</p>
+                        <ul class="foot-menu">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms of Uses</a></li>
+                            <li><a href="#">Disclaimers</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="useful-links col-md-3  col-xs-12">
+                        <p class="foot-title">Some Useful Links</p>
+                        <ul class="foot-menu">
+                            <li><a href="">About Job Portal</a></li>
+                            <li><a href="">Job Seeker Register</a></li>
+                            <li><a href="">Employer Register</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="useful-links col-md-3 col-xs-12">
+                        <p class="foot-title">Some Useful Links</p>
+                        <ul class="foot-menu">
+                            <li><a href="">About Job Portal</a></li>
+                            <li><a href="">Job Seeker Register</a></li>
+                            <li><a href="">Employer Register</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo2 col-md-3 col-xs-12">
+                        <a href="#"><img src="pic/logo.png" alt="logo" ></a>
+                    </div>
+                </div>
+            </div><<!--end of container-->
+        </div><!--end of footer-->
+    </div><!--end of row-->
+</div><!--end of container-fluid-->
+
+<div class="clearfix"></div>
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

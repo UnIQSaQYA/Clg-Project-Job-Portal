@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css/_bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="header">
+            <div class="logo col-sm-6 col-xs-12">
+                <a href="index.html"><img id="logo1"  src="pic/logo.png" alt="logo" ></a>
+            </div>
+
+            <div class="login col-sm-6 col-xs-12">
+                <form class="form-inline" method="post" action="#">
+                    <div class="form-group">
+                        <input type="text" name="username" placeholder="username" style="height: 35px; width: 150px;"/>
+
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="password" style="height: 35px; width: 150px;"/>
+                    </div>
+
+                    <input type="submit" class="btn btn-primary" name="sign_in" value="login"/>
+                </form>
+            </div>
+
+            <div class="row">
+                <div class="sign-up-description">
+                    <p id="description">For registration. Click here</p><br>
+                    <div class="sign-up pull-right">
+                        <div class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Signup
+                                <span class="caret"></span></button>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li><a href="emp_signup.html">Jobseeker</a> </li>
+                                <li><a href="js_signup.html">Employee</a></li>
+                            </ul>
+                        </div>
+                    </div><!--end of signup-->
+                </div><!--end of signup-description-->
+            </div><!--end of row-->
+        </div><!--end of login-->
+    </div><!--end of header-->
+</div><!--end of row-->
+</div><!--end of container-->
+
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-default" role="navigation">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class=" navbar-collapse collapse " aria-expanded="false" id="bs-example-navbar-collapse-1">
+                <div class="container">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="js_login.html">Jobseeker</a></li>
+                            <li><a href="js_login.html">Employer</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="contact_us.html">Contact Us</a></li>
+                        </ul>
+                </div><!--end of container-->
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div><!--container-fluid-->
+<div class="clearfix"></div>
+
+<div class="container">
+        <div class="contact_detail col-sm-4">
+           <h5><b>Head Office</b></h5>
+            <p class="text-info">Location:Swayambhu</p>
+            <p class="text-info">Tel no:4-200000</p>
+            <p class="text-info">Mobile no:9818-000000</p><br>
+
+            <h5><b>Email</b></h5>
+            <a href="#" class="text-success">tanudangol@gmail.com</a>
+        </div>
+
+        <div class="contact_form col-sm-6" >
+            <form class="form-horizontal" id="contact-form">
+                <div class="form-group">
+                    <label for="name" class="col-sm-3">
+                        Name:
+                    </label>
+
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="Telephone" class="col-sm-3">
+                        Telephone:
+                    </label>
+
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="Telephone" placeholder="Enter Telephone No">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="E-mail" class="col-sm-3">
+                        E-mail Address:
+                    </label>
+
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="E-mail" placeholder="Enter Email Address">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="col-sm-3">
+                        Your Message:
+                    </label>
+
+                    <div class="col-sm-9">
+                        <textarea class="form-control" id="message" placeholder="Enter Company Name"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-primary pull-right">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div><!--contact_form-->
+</div>
+
+<div class="container-fluid">
+<div class="row">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="about-site col-md-3 col-sm-4">
+                    <p class="foot-title">About Our Site</p>
+                    <ul class="foot-menu">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms of Uses</a></li>
+                        <li><a href="#">Disclaimers</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="useful-links col-md-3  col-sm-4">
+                    <p class="foot-title">Some Useful Links</p>
+                    <ul class="foot-menu">
+                        <li><a href="">About Job Portal</a></li>
+                        <li><a href="">Job Seeker Register</a></li>
+                        <li><a href="">Employer Register</a></li>
+                    </ul>
+                </div>
+
+                <div class="useful-links col-md-3 col-sm-4">
+                    <p class="foot-title">Some Useful Links</p>
+                    <ul class="foot-menu">
+                        <li><a href="">About Job Portal</a></li>
+                        <li><a href="">Job Seeker Register</a></li>
+                        <li><a href="">Employer Register</a></li>
+                    </ul>
+                </div>
+
+                <div class="logo2 col-md-3">
+                    <a href="#"><img src="pic/logo.png" alt="logo" ></a>
+                </div>
+            </div>
+        </div><<!--end of container-->
+    </div><!--end of footer-->
+</div><!--end of row-->
+</div>
+
+<div class="clearfix"></div>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+
+</body>
+</html>

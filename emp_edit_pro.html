@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css/_bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="header">
+            <div class="logo col-md-6 col-sm-6 col-xs-12">
+                <a href="index.html"><img id="logo1"  src="pic/logo.png" alt="logo" ></a>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Niklesh Shakya
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li><a href="emp_dashboard.html">Dashboard</a></li>
+                    <li><a href="emp_change_pw.html">Change Password</a></li>
+                    <li><a href="index.html">Log Out</a></li>
+                </ul>
+            </div>
+        </div><!--end of header-->
+    </div><!--end of row-->
+</div><!--end of header-->
+</div><!--end of container-->
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-default col-md-12 col-xs-12 col-sm-12">
+            <div class="navbar-header ">
+                <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="container">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Job Seeker</a></li>
+                            <li><a href="emp_dashboard.html">Employer</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="contact_us.html">Contact Us</a></li>
+                        </ul>
+                </div><!--end of container-->
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+        <div class="dashboard-aside col-sm-4 col-xs-12">
+            <div class="panel panel-default">
+                <div class="pro_pic">
+                    <div class="media-heading">
+                        <div class="image-upload">
+                            <label for="jsfile-input" class="col-lg-12">
+                                upload Photo
+                            </label>
+                            <img id="jsprofile_pic" src="#" alt="your_image"/>
+                            <input id="jsfile-input" type="file" onchange="readURL(this);"/>
+                        </div>
+
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">My Profile</h3>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                    <a href="emp_dashboard.html">Dashboard</a>
+                </div>
+
+                <div class="panel-body">
+                    <a href="emp_edit_pro.html">Edit profile</a>
+                </div>
+                <div class="panel-body">
+                    <a href="emp_view_profile.html">View profile</a>
+                </div>
+
+                <div class="panel-body">
+                    <a href="post_job.html">Post Jobs</a>
+                </div>
+
+                <div class="panel-body">
+                    <a href="edit_jobs.html" >Edit Jobs</a>
+                </div>
+
+                <div class="panel-body">
+                    <a href="index.html">Log Out</a>
+                </div>            </div><!--panel panel-default-->
+        </div><!--dashboard-aside-->
+
+        <div class="edit col-sm-7 col-xs-12">
+            <h3><strong>EDIT PROFILE</strong></h3>
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="companyname" class="col-sm-4 control-label">Company Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="companyname" placeholder="Enter Company Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="companyAddress" class="col-sm-4 control-label">Company Adderess</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="companyAddress" placeholder="Company Address">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nature of company" class="col-sm-4 control-label">Nature Of Company</label>
+                    <div class="col-sm-8">
+                        <select id="nature of company" class="form-control">
+                            <option>--Select--</option>
+                            <option>Information Technology/Computers</option>
+                            <option>Farming/Agriculture</option>
+                            <option>INGO/NGO/Social Work</option>
+                            <option>Goverment</option>
+                            <option>E-commerce/Online store</option>
+                            <option>Education/School/College</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="companylogo" class="col-sm-4 control-label">Company Logo</label>
+                    <div class="col-sm-8">
+                        <input type="file" id="companylogo">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="companywebsite" class="col-sm-4 control-label">Company WebSite</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="companywebsite" placeholder="Company WebSite">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="officecontact" class="col-sm-4 control-label">Office Contact</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="officecontact" placeholder="Office Contact">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="col-sm-4 control-label">E-mail Address</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="email" placeholder="E-mail Address">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">About Company</label>
+                    <div class="col-sm-8">
+                        <textarea rows="10" class="form-control" placeholder="Write something about your company"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-primary pull-right">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div><!--emp_edit_pro-->
+</div><!--end of container-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="about-site col-md-3  col-xs-12">
+                        <p class="foot-title">About Our Site</p>
+                        <ul class="foot-menu">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms of Uses</a></li>
+                            <li><a href="#">Disclaimers</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="useful-links col-md-3  col-xs-12">
+                        <p class="foot-title">Some Useful Links</p>
+                        <ul class="foot-menu">
+                            <li><a href="">About Job Portal</a></li>
+                            <li><a href="">Job Seeker Register</a></li>
+                            <li><a href="">Employer Register</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="useful-links col-md-3 col-xs-12">
+                        <p class="foot-title">Some Useful Links</p>
+                        <ul class="foot-menu">
+                            <li><a href="">About Job Portal</a></li>
+                            <li><a href="">Job Seeker Register</a></li>
+                            <li><a href="">Employer Register</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo2 col-md-3 col-xs-12">
+                        <a href="#"><img src="pic/logo.png" alt="logo" ></a>
+                    </div>
+                </div>
+            </div><<!--end of container-->
+        </div><!--end of footer-->
+    </div><!--row-->
+</div><!--container-fluid-->
+
+<div class="clearfix"></div>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+
+</body>
+</html>

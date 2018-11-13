@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="css/_bootstrap.css"/>
+    <link rel=" stylesheet" type="text/css" href="css/joyride-2.1.css">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="header">
+            <div class="logo col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <a href="index.html"><img id="logo1"  src="pic/logo.png" alt="logo" ></a>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Niklesh Shakya
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li><a href="emp_dashboard.html">Dashboard</a></li>
+                    <li><a href="emp_change_pw.html">Change Password</a></li>
+                    <li><a href="index.html">Log Out</a></li>
+                </ul>
+            </div><!--end of dropdown-->
+
+        </div><!--end of header-->
+    </div><!--end of row-->
+</div><!--end of container-->
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-default col-md-12 col-xs-12 col-sm-12">
+            <div class="navbar-header ">
+                <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Job Seeker</a></li>
+                        <li><a href="emp_dashboard.html">Employer</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div><!--end of container-->
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div><!--container-fluid-->
+
+<div class="clearfix"></div>
+
+
+<div class="container">
+    <div class="dashboard-aside col-sm-4 col-xs-12">
+        <div class="panel panel-default">
+            <div class="pro_pic">
+                <div class="media-heading">
+                    <div class="image-upload">
+                        <label for="jsfile-input" class="col-lg-12">
+                            upload Photo
+                        </label>
+                        <img id="jsprofile_pic" src="#" alt="your_image"/>
+                        <input id="jsfile-input" type="file" onchange="readURL(this);"/>
+                    </div>
+                </div><!--end of media-heading-->
+                <div class="media-body">
+                    <h3 class="media-heading">My Profile</h3>
+                </div>
+            </div><!--pro_pic-->
+
+            <div class="panel-body">
+                <a href="emp_dashboard.html" >Dashboard</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="emp_edit_pro.html">Edit profile</a>
+            </div>
+            <div class="panel-body">
+                <a href="emp_view_profile.html">View profile</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="post_job.html" >Post Jobs</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="edit_jobs.html" >Edit Jobs</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="index.html">Log Out</a>
+            </div>
+        </div> <!--panel panel-default-->
+    </div><!--dashboard-aside-->
+
+    <div class="edit-job col-sm-7 col-xs-12">
+        <h3><strong>EDIT POST JOBS</strong></strong></h3>
+
+        <div class="jobs">
+            <div class="media-right">
+                <a href="#">
+                    <img class="media-object" src="pic/vega%20(1).png" alt="Profile pic" height="80px" width="80px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading "><b>Vega</b></h3>
+                <p>Web Developer</p>
+                <p class="text-info">Atleast 1 year of experience.Some development experience in designing...</p>
+                <p  class="text-danger">Deadline:2 days left</p>
+
+                <a href="edit-job-detail.html"><button class="btn btn-primary pull-right ">Edit</button></a>
+                <a href=""><button class="btn btn-primary pull-right ">Delete</button></a>
+            </div><!--media-body-->
+        </div><!--end of jobs-->
+
+        <div class="jobs">
+            <div class="media-right">
+                <a href="#">
+                    <img class="media-object" src="pic/phasenepal.png" alt="Profile pic" height="80px" width="80px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading "><b>Phase Nepal</b></h3>
+                <p>Livelihood Supervisor – 2</p>
+                <p class="text-info">Minimum 2 years of working experience in similar field...</p>
+                <p class="text-danger">Deadline:15 days left</p>
+                <a href="edit-job-detail.html"><button class="btn btn-primary pull-right ">Edit</button></a>
+                <a href=""><button class="btn btn-primary pull-right ">Delete</button></a>
+            </div>
+        </div><!--end of jobs-->
+    </div><!--jobseeker_recomd-->
+</div><!--end of container-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="about-site col-md-3  col-xs-12">
+                        <p class="foot-title">About Our Site</p>
+                        <ul class="foot-menu">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms of Uses</a></li>
+                            <li><a href="#">Disclaimers</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="useful-links col-md-3  col-xs-12">
+                        <p class="foot-title">Some Useful Links</p>
+                        <ul class="foot-menu">
+                            <li><a href="">About Job Portal</a></li>
+                            <li><a href="">Job Seeker Register</a></li>
+                            <li><a href="">Employer Register</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="useful-links col-md-3 col-xs-12">
+                        <p class="foot-title">Some Useful Links</p>
+                        <ul class="foot-menu">
+                            <li><a href="">About Job Portal</a></li>
+                            <li><a href="">Job Seeker Register</a></li>
+                            <li><a href="">Employer Register</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo2 col-md-3 col-xs-12">
+                        <a href="#"><img src="pic/logo.png" alt="logo" ></a>
+                    </div>
+                </div>
+            </div><<!--end of container-->
+        </div><!--end of footer-->
+    </div><!--row-->
+</div><!--container-fluid-->
+
+<div class="clearfix"></div>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.joyride-2.1.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+
+</body>
+</html>

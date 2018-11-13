@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post Job</title>
+    <link rel="stylesheet" href="css/_bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="header">
+            <div class="logo col-md-6 col-sm-6 col-xs-12">
+                <a href="index.html"><img id="logo1"  src="pic/logo.png" alt="logo" ></a>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Niklesh Shakya
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li><a href="emp_dashboard.html">Dashboard</a></li>
+                    <li><a href="emp_change_pw.html">Change Password</a></li>
+                    <li><a href="index.html">Log Out</a></li>
+                </ul>
+            </div>
+        </div><!--end of header-->
+    </div><!--end of row-->
+</div><!--end of header-->
+</div><!--end of container-->
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-default col-md-12 col-xs-12 col-sm-12">
+
+            <div class="navbar-header ">
+                <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Job Seeker</a></li>
+                        <li><a href="emp_dashboard.html">Employer</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div><!--end of container-->
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+    <div class="dashboard-aside col-sm-4 col-xs-12">
+        <div class="panel panel-default">
+            <div class="pro_pic">
+                <div class="media-heading">
+                    <div class="image-upload">
+                        <label for="jsfile-input" class="col-lg-12">
+                            upload Photo
+                        </label>
+                        <img id="jsprofile_pic" src="#" alt="your_image"/>
+                        <input id="jsfile-input" type="file" onchange="readURL(this);"/>
+                    </div>
+
+                </div>
+                <div class="media-body">
+                    <h3 class="media-heading">My Profile</h3>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <a href="emp_dashboard.html">Dashboard</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="emp_edit_pro.html">Edit profile</a>
+            </div>
+            <div class="panel-body">
+                <a href="#">View profile</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="post_job.html">Post Jobs</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="edit_jobs.html" >Edit Jobs</a>
+            </div>
+
+            <div class="panel-body">
+                <a href="index.html">Log Out</a>
+            </div>
+        </div><!--panel panel-default-->
+    </div><!--dashboard-aside-->
+
+    <div class="edit col-sm-7 col-xs-12">
+        <h3 class="text-uppercase"><strong>Edit Post job</strong></h3>
+        <form class="form-horizontal" method="" action="">
+            <div class="form-group">
+                <label for="job-title" class="col-sm-4 control-label">Job Title:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="job-title" placeholder="Enter Job Title" value="software Developer">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="org-name" class="col-sm-4 control-label">Organization Name:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="org-name" placeholder="Enter Organization Name" value="vega">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="catagory"  class=" control-label col-sm-4 hidden-xs ">
+                    Catagory
+                </label>
+
+                <div class="col-sm-8">
+                    <select id="catagory" class="form-control">
+                        <option>--Select--</option>
+                        <option>Account/finance</option>
+                        <option>software</option>
+                        <option>Marketing</option>
+                        <option>Goverment</option>
+                        <option selected>it/communication</option>
+                        <option>intern</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Job Type</label>
+                <div class="col-sm-8">
+                    <label for="full" >Full-time</label>
+                    <input type="radio" id="full" checked>
+                    <label for="part" >Part-time</label>
+                    <input type="radio" id="part">
+                    <label for="contract" >Contract</label>
+                    <input type="radio" id="contract">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Job Level</label>
+                <div class="col-sm-8">
+                    <label for="entry-level" >Entry Level</label>
+                    <input type="radio" checked  id="entry-level">
+                    <label for="mid-level" >Mid Level</label>
+                    <input type="radio" id="mid-level">
+                    <label for="senior-level" >Senior Level</label>
+                    <input type="radio" id="senior-level">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="salary" class="col-sm-4 control-label">Salary:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="salary" placeholder="Enter Salary" value="8000">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="experience" class="col-sm-4 control-label">Experience:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="experience" placeholder="Enter Experience" value="1-any yrs">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="education" class="col-sm-4 control-label">Education:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="education" placeholder="Enter Education" value="bachelor degree">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="vacancy" class="col-sm-4 control-label">No. of Vacancy:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="vacancy" placeholder="Enter No. of Vacancy" value="2">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="joblocation" class="col-sm-4 control-label">Job Location:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="joblocation" placeholder="Enter Location" value="baneshor">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="deadline" class="col-sm-4 control-label">Deadline:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="deadline" placeholder="Enter Deadline">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="companywebsite" class="col-sm-4 control-label">Company Website:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="companywebsite" placeholder="Enter company Website" value="www.vnepal.com">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="jobdescription" class="col-sm-4 control-label">Job Description:</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" id="jobdescription" rows="9" placeholder="Enter Job Description"> Good JavaScript skills including the ability to develop UI components Knowledge of asynchronous programming and event driven programming paradigms Way in optimizing JavaScript code for performance Object-oriented JavaScript JavaScript testing frameworks and methodology. Desire to learn new technologies/concepts and find solutions Good analytical, problem-solving, and communication skills Ability to work in group and apply best software engineering practices throughout development life cycles Nodejs knowledge is plusExperience/Expertise in implementing jQuery / and other javascript front-end frameworks
+
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="jobspecification" class="col-sm-4 control-label">Job Specification:</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" id="jobspecification" rows="9" placeholder="Enter Job Specification">Goodgrasp of Javascript codingHave some experience or projects done using javascriptGood Knowledge of jQuery , Angular , ReactFront end coding is plus
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary pull-right">Save</button>
+            </div>
+        </form>
+    </div>
+</div><!--end of container-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="about-site col-md-3  col-xs-12">
+                        <p class="foot-title">About Our Site</p>
+                        <ul class="foot-menu">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms of Uses</a></li>
+                            <li><a href="#">Disclaimers</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="useful-links col-md-3  col-xs-12">
+                        <p class="foot-title">Some Useful Links</p>
+                        <ul class="foot-menu">
+                            <li><a href="">About Job Portal</a></li>
+                            <li><a href="">Job Seeker Register</a></li>
+                            <li><a href="">Employer Register</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="useful-links col-md-3 col-xs-12">
+                        <p class="foot-title">Some Useful Links</p>
+                        <ul class="foot-menu">
+                            <li><a href="">About Job Portal</a></li>
+                            <li><a href="">Job Seeker Register</a></li>
+                            <li><a href="">Employer Register</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo2 col-md-3 col-xs-12">
+                        <a href="#"><img src="pic/logo.png" alt="logo" ></a>
+                    </div>
+                </div>
+            </div><<!--end of container-->
+        </div><!--end of footer-->
+    </div><!--row-->
+</div><!--container-fluid-->
+
+<div class="clearfix"></div>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+</body>
+</html>
